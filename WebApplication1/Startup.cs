@@ -28,7 +28,7 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-             services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+             services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer(@"Persist Security Info=False;User ID=dupreeztheron;Initial Catalog=CO;Data Source=projecttwee.database.windows.net"));
            // services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 
             services.AddSwaggerGen(options => { options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "MyTest", Version = "v2", Description = "Test demo for students", }); });
