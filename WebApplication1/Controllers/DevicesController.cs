@@ -13,9 +13,9 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class DevicesController : ControllerBase
     {
-        private readonly ConnectedOfficeContext _context;
+        private readonly COContext _context;
 
-        public DevicesController(ConnectedOfficeContext context)
+        public DevicesController(COContext context)
         {
             _context = context;
         }
