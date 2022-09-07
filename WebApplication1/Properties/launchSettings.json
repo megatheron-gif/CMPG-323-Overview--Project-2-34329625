@@ -15,7 +15,7 @@
       "launchUrl": "swagger",
       "environmentVariables": { "ASPNETCORE_ENVIRONMENT": "Development" }
     },
-    "WebApplication1" {
+    "WebApplication1":{
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
